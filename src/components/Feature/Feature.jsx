@@ -47,9 +47,9 @@ function Feature() {
                             
                        </div>
                     </div>
-                    <div className="col-md-6 col-lg-7">
+                    <div className="col-md-6 col-lg-7 px-4">
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6 mb-3">
                                 <div className="feature_item">
                                     <img src={chefSvg} alt="" />
                                     <h4>World’s best Chef</h4>

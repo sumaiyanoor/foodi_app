@@ -1,0 +1,103 @@
+.food_card_container{
+    position: relative;
+    width: 100%;
+    padding: 90px 0 60px 0;
+    margin: 45px 0;
+    background: rgba(0, 0, 0, .04);
+}
+.food_card_row{
+    align-items: center !important;
+    margin: auto auto;
+    position: relative;
+}
+.viewMenu{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #fbaf32;
+    transition: .3s;
+}
+.food_card{
+    position: relative;
+    background: white;
+    margin: 20px 25px;
+    padding: 50px 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+    transition: .3s;
+}
+
+.food_card a{
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 5px;
+}.food_card a:hover::before{
+       position: absolute;
+    content: "";
+    width: 83px;
+    height: 1px;
+    bottom: 0;
+    left: calc(54% - 44px);
+    background: #719a0a;
+    transition: .3s;
+    /* color: #719a0a; */
+}
+.food_card a::after{
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 1px;
+        bottom: 0;
+        left: calc(50% - 25px);
+        background: #fbaf32;
+        transition: .3s;
+    }
+    .food_card a:hover::after{
+        
+        background: #719a0a;
+        transition: .3s;
+        color:#719a0a;
+    }
+    .food_card a:hover{
+        width: 100%;
+        left: 0;
+        color: #719a0a;
+    }
+
+
+.food_card:hover{
+    box-shadow: none;
+}
+.food_card .food_card_img{
+position: relative;
+display: inline-block;
+color: #fbaf32;
+font-size: 60px;
+line-height: 60px;
+margin-bottom: 20px;
+transition: .3s;
+
+}
+.food_card .food_card_img::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -20px;
+    left: -15px;
+    border: 3px dotted #fbaf32;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-radius: 100px;
+    transition: .3s;
+}
+@media (min-width: 1200px){
+    .food_card{
+        margin: 20px 40px;
+    }
+}
+@media (max-width:400px){
+    .food_card{
+        margin: 10px 0px;
+    }
+}

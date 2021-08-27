@@ -18,12 +18,38 @@
 }
 .feature_img img:hover{
     transform: scale(1.1);
+    transition: transform 4s cubic-bezier(0.25, 0.45, 0.45, 0.95); /* for photo style*/
+    cursor: pointer;
 }
-.feature .feature_item {
+
+/*ditto secton */
+.ditto {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    margin-left: 490px;
+    margin-top: -650px;
+  }
+  
+  .cotto {
+    width: 27vw;
+    padding: 20px 10px;
+  }
+  
+  .cotto-item {
+    width: 250px;
+  }
+
+  .cotto-item img {
+    width: 50px;
+  }
+
+/* .feature_item {
     width: 100%;
     margin-bottom: 45px;
 }
 
-.feature .feature_item img {
+.feature_item img {
     width: 50px;
-}
+} */
